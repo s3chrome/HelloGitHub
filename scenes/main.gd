@@ -16,3 +16,6 @@ func _process(delta: float) -> void:
 	if dir:
 		player.position += dir * SPEED * delta
 		label.text = "%s" % player.position
+	if Input.is_action_just_pressed("A"):
+		label.text = "press a"
+		
