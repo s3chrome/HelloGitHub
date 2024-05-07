@@ -1,8 +1,15 @@
-[gd_scene format=3 uid="uid://bj3qt5ip0ih5c"]
+[gd_scene load_steps=3 format=3 uid="uid://bj3qt5ip0ih5c"]
+
+[ext_resource type="Script" path="res://scenes/main.gd" id="1_jy0es"]
+[ext_resource type="Texture2D" uid="uid://dl363vvx6xgh4" path="res://icon.svg" id="2_rwlcm"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_jy0es")
 
 [node name="Label" type="Label" parent="."]
 offset_right = 40.0
 offset_bottom = 23.0
 text = "HelloGitHub"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_rwlcm")
