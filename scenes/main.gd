@@ -18,8 +18,14 @@ func _process(delta: float) -> void:
 		player.position += dir * SPEED * delta
 		label.text = "%s" % player.position
 	if Input.is_action_just_pressed("A"):
-		label.text = "press a"
-		
+		label.text = "press A"
+	if Input.is_action_just_pressed("Start"):
+		label.text = "press Start"
+	if Input.is_action_just_pressed("Back"):
+		label.text = "press Back"
+	if Input.is_action_just_pressed("Home"):
+		label.text = "press Home"
+
 func my_func():
 	#DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
 	#DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
