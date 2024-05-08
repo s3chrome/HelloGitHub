@@ -7,6 +7,8 @@ const SPEED = 300.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+	
 	$Button.pressed.connect(my_func)
 	pass # Replace with function body.
 
@@ -21,6 +23,8 @@ func _process(delta: float) -> void:
 		label.text = "press a"
 		
 func my_func():
+	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+
 	#
 	if OS.has_feature('web'):
 		JavaScriptBridge.eval("""
