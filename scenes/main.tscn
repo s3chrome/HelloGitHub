@@ -19,6 +19,6 @@ texture = ExtResource("2_rwlcm")
 [node name="Button" type="Button" parent="."]
 offset_left = 8.0
 offset_top = 8.0
-offset_right = 51.0
-offset_bottom = 39.0
+offset_right = 120.0
+offset_bottom = 56.0
 text = "Exec"
