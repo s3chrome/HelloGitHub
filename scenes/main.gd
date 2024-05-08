@@ -39,7 +39,7 @@ func my_func():
 		print("The JavaScriptBridge singleton is NOT available")
 
 	#
-	JavaScriptBridge.eval("alert('Calling JavaScript per GDScript!');")
+	#JavaScriptBridge.eval("alert('Calling JavaScript per GDScript!');")
 
 	# number to float
 	# boolean to bool
