@@ -21,4 +21,4 @@ offset_left = 8.0
 offset_top = 8.0
 offset_right = 120.0
 offset_bottom = 56.0
-text = "Exec"
+text = "Toggle FullScreen"
